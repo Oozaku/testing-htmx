@@ -1,0 +1,21 @@
+<div>
+	<form
+		hx-post="/comment"
+		hx-target="#comments-setion"
+		hx-swap="outerHTML"
+	>
+		<div>
+			<label for="title">Title:</label><br>
+			<input type="text" id="title" name="title"><br>
+		</div>
+
+		<div>
+			<label for="body">Body:</label><br>
+			<input type="text" id="body" name="body">
+		</div>
+
+		<div>
+			<input type="submit" value="Comment">
+		</div>
+	</form>
+</div>

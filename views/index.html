@@ -1,10 +1,16 @@
-<head>
-  <title>Comments</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-</head>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comments</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script src="https://unpkg.com/htmx.org@1.9.5" integrity="sha384-xcuj3WpfgjlKF+FXhSQFQ0ZNr39ln+hwjN3npfM9VBnUskLolQAcN80McRIVOPuO" crossorigin="anonymous"></script>
+	</head>
 
-<body>
-	<h1>Comments</h1>
+	<body>
+		<h1>Comments</h1>
 
-	{{template "components/comments" .}}
-</body>
+		{{template "components/new-comment" .}}
+
+		{{template "components/comments" .}}
+	</body>
+</html>
